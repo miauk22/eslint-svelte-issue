@@ -1,0 +1,187 @@
+{
+    "plugins": [
+        "svelte3",
+        "@typescript-eslint"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "overrides": [
+        {
+            "files": ["*.svelte"],
+            "processor": "svelte3/svelte3"
+          }
+    ],
+    "extends": [
+        "eslint:recommended"
+    ],
+    "ignorePatterns": [
+        "VibesAdminUI",
+        "node_modules/",
+        "**/*.js"
+    ],
+    "rules": {
+        "no-console": [
+            "error",
+            {
+                "allow": [
+                    "warn",
+                    "error",
+                    "info",
+                    "groupCollapsed",
+                    "groupEnd"
+                ]
+            }
+        ],
+        "eqeqeq": [
+            "error",
+            "smart"
+        ],
+        "no-else-return": "error",
+        "no-return-await": "error",
+        "no-self-compare": "error",
+        "no-self-assign": "off",
+        "no-unmodified-loop-condition": "error",
+        "yoda": [
+            "error",
+            "never"
+        ],
+        "no-label-var": "error",
+        "no-shadow": "off",
+        "@typescript-eslint/no-shadow": "warn",
+        "no-use-before-define": "off",
+        "array-bracket-newline": [
+            "warn",
+            {
+                "multiline": true
+            }
+        ],
+        "array-bracket-spacing": "warn",
+        "brace-style": "warn",
+        "comma-spacing": [
+            "warn",
+            {
+                "before": false,
+                "after": true
+            }
+        ],
+        "comma-style": [
+            "warn",
+            "last"
+        ],
+        "func-call-spacing": [
+            "warn",
+            "never"
+        ],
+        "max-depth": [
+            "error",
+            4
+        ],
+        "max-len": [
+            "error",
+            {
+                "code": 130,
+                "ignoreStrings": true,
+                "ignoreTemplateLiterals": true
+            }
+        ],
+        "no-multiple-empty-lines": [
+            "error",
+            {
+                "max": 2,
+                "maxEOF": 1,
+                "maxBOF": 1
+            }
+        ],
+        "no-nested-ternary": "error",
+        "no-trailing-spaces": [
+            "warn",
+            {
+                "skipBlankLines": true
+            }
+        ],
+        "no-unneeded-ternary": "error",
+        "object-curly-spacing": [
+            "warn",
+            "always"
+        ],
+        "one-var-declaration-per-line": "warn",
+        "semi": "off",
+        "@typescript-eslint/semi": ["error"],
+        "semi-style": [
+            "warn",
+            "last"
+        ],
+        "semi-spacing": [
+            "warn",
+            {
+                "before": false,
+                "after": true
+            }
+        ],
+        "space-before-blocks": "warn",
+        "arrow-parens": [
+            "warn",
+            "as-needed"
+        ],
+        "arrow-spacing": "warn",
+        "no-duplicate-imports": "error",
+        "no-var": "error",
+        "prefer-const": "warn",
+        "no-constant-condition": "off",
+        "no-fallthrough": "off",
+        "prefer-spread": "off",
+        "no-unused-labels": "off",
+        "no-multi-spaces": "warn",
+        "keyword-spacing": "warn",
+        "no-lonely-if": "warn",
+        "comma-dangle": "warn",
+        "@typescript-eslint/no-use-before-define": "off",
+        "@typescript-eslint/no-this-alias": "off",
+        "@typescript-eslint/interface-name-prefix": "off",
+        "@typescript-eslint/unbound-method": "off",
+        "@typescript-eslint/no-unnecessary-type-assertion": "off",
+        "@typescript-eslint/prefer-string-starts-ends-with": "off",
+        "@typescript-eslint/adjacent-overload-signatures": "off",
+        "@typescript-eslint/no-empty-function": "off",
+        "@typescript-eslint/no-empty-interface": "off",
+        "@typescript-eslint/no-explicit-any": [
+            "warn",
+            {
+                "ignoreRestArgs": true,
+                "fixToUnknown": true
+            }
+        ],
+        "@typescript-eslint/no-misused-promises": "off",
+        "@typescript-eslint/no-unused-vars": [
+            "warn",
+            {
+                "vars": "local",
+                "ignoreRestSiblings": true,
+                "caughtErrors": "none"
+            }
+        ],
+        "no-magic-numbers": "off",
+        "@typescript-eslint/no-magic-numbers": [
+            "warn",
+            {
+                "ignoreReadonlyClassProperties": true,
+                "enforceConst": true,
+                "ignoreArrayIndexes": true,
+                "ignore": [
+                    -1,
+                    0,
+                    1,
+                    2,
+                    100,
+                    0.5
+                ],
+                "ignoreEnums": true
+            }
+        ],
+        "prettier/prettier": ["error", {
+            "endOfLine":"auto"
+        }]
+    },
+    "settings": {
+        "svelte3/typescript": true
+    }
+}
